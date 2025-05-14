@@ -1,0 +1,10 @@
+services:
+  mars:
+    build: .
+    user: "${UID}:${GID}"
+    volumes:
+      - ./code:/app/code
+      - /tmp/.X11-unix:/tmp/.X11-unix
+    environment:
+      - DISPLAY=$DISPLAY
+      - USER=${USER}
