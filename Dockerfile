@@ -11,3 +11,6 @@ COPY /code /app/code
 
 # Set up X11 forwarding (for GUI)
 ENV DISPLAY=host.docker.internal:0
+
+# Default command: Run MARS
+CMD ["java", "-jar", "/mars.jar"]
