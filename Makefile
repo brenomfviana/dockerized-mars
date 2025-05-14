@@ -13,6 +13,6 @@ down:
 	docker compose -f compose.yml down
 
 run:
+	make down
 	xhost +local:docker
 	make up
-	docker compose run mars
