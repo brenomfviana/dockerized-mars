@@ -24,12 +24,14 @@ echo "GID=$(id -g)" >> .env
 echo "USER=$(whoami)" >> .env
 ```
 
+ou
+
+```bash
+make config
+```
+
 3. Executar o MARS
 
 ```bash
 make run
 ```
-
-## Afazeres
-
-- [ ] Baixar o mars.jar na construção da imagem Docker.
