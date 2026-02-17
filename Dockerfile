@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y libxrender1 libxtst6 libxi6 && \
     apt-get clean
 
 COPY download-mars.sh ./download-mars.sh
-COPY code ./code
+COPY code /app/code
 
 RUN chmod +x ./download-mars.sh && ./download-mars.sh
 
